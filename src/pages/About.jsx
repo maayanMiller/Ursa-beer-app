@@ -1,16 +1,36 @@
-// import {FlapDisplay, Presets} from 'react-split-flap-effect'
-export function About() {
+// import { FlapDisplay, Presets } from 'react-split-flap-effect'
+import { FlapDisplay, Presets } from 'earthtoday-react-split-flap-effect'
+import React, { useState, useEffect } from 'react';
+export function About({ initialValue, value }) {
+	const [currentValue, setCurrentValue] = useState(initialValue);
+	const [previousValue, setPreviousValue] = useState(initialValue);
+	const [animating, setAnimating] = useState(false);
+
+	useEffect(() => {
+		if (value !== currentValue)
+		{
+			setPreviousValue(currentValue);
+			setCurrentValue(value);
+			setAnimating(true);
+		}
+	}, [value, currentValue]);
+
+	function handleAnimationEnd() {
+		setAnimating(false);
+	}
+
+	const flapClasses = ['split-flap-flap'];
+	if (animating)
+	{
+		flapClasses.push('split-flap-flap-animating');
+	}
+
 	return (
-		<section className='about'>
-			<section className='title-container'>
-				<h2>About us and beers</h2>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla minus explicabo
-					ipsum necessitatibus cupiditate facere corrupti, praesentium tempora molestias,
-					accusantium repellendus, in quasi. Iste labore maxime, vitae nulla odit sint.
-				</p>
-			</section>
-		</section>
-		// <FlapDisplay chars={Presets.ALPHANUM + ',!'} length={13} value={'Hello, World!'} />
-	)
+		<div className="split-flap-display">
+			<div className={flapClasses.join(' ')} onAnimationEnd={handleAnimationEnd}>
+				<span className="split-flap-previous-value">4hjgjh</span>
+				<span className="split-flap-current-value">dfdddddd</span>
+			</div>
+		</div>
+	);
 }

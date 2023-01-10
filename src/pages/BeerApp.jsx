@@ -6,12 +6,18 @@ import { BeerList } from '../cmps/BeerList'
 import { beerService } from '../services/beerService'
 import { connect } from 'react-redux'
 import { loadBeers, removeBeer, setFilterBy } from '../store/actions/beerActions'
+import { BeerBoard } from '../cmps/BeerBoard'
+import { ABlock } from '../cmps/ABlock'
 
 class _BeerApp extends Component {
 
 	async componentDidMount() {
 		this.props.loadBeers()
+		console.log('this.props:', this.props)
 		console.log('	this.props:', this.props)
+	}
+	state = {
+		isBoardOpen: false
 	}
 
 	// async loadBeers() {
@@ -42,25 +48,21 @@ class _BeerApp extends Component {
 	render() {
 		const { beers } = this.props
 		if (!beers) return <div>Loading...</div>
-		const TextCmp = () => <span>Nice Button</span>
-		const Icon = () => '🍇'
+		if (this.state.isBoardOpen) return <BeerBoard beers={beers} />
+
 
 		return (
-			<div className='beer-app'>
+			<><div className='beer-app'>
 				<BeerFilter onChangeFilter={this.onChangeFilter} />
 				<Link to='/beer/edit'>Add Beer</Link>
+				<h4 onClick={() => this.setState({ isBoardOpen: !this.state.isBoardOpen })}> board</h4>
+				<ABlock beers={beers} />
 				<BeerList
 					history={this.props.history}
 					onRemoveBeer={this.onRemoveBeer}
-					beers={beers}
-				/>
-				<NiceButton
-					Icon={Icon}
-					className='nice-button'
-					onClick={() => console.log('nice button clicked')}>
-					<TextCmp />
-				</NiceButton>
+					beers={beers} />
 			</div>
+			</>
 		)
 	}
 }

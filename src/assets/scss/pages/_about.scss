@@ -2,6 +2,56 @@
     h2 {
         text-decoration: underline;
         margin-bottom: 10px;
-       
+
+    }
+}
+
+.split-flap-display {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.split-flap-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+.split-flap-flap-animating {
+    animation: flip 0.5s ease-in-out;
+}
+
+.split-flap-previous-value,
+.split-flap-current-value {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    text-align: center;
+    line-height: 100px;
+    transform: translateY(-100%);
+}
+
+.split-flap-current-value {
+    z-index: 1;
+}
+
+@keyframes flip {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
     }
 }

@@ -1,11 +1,11 @@
-import {HashRouter as Router, Redirect, Route, Switch} from 'react-router-dom'
+import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 
 import './assets/scss/global.scss'
-import {BeerApp} from './pages/BeerApp'
-import {AppHeader} from './cmps/AppHeader'
-import {About} from './pages/About'
-import {BeerDetails} from './pages/BeerDetails'
-import {BeerEdit} from './pages/BeerEdit'
+import { BeerApp } from './pages/BeerApp'
+import { AppHeader } from './cmps/AppHeader'
+import { About } from './pages/About'
+import { BeerDetails } from './pages/BeerDetails'
+import { BeerEdit } from './pages/BeerEdit'
 
 const PrivateRoute = (props) => {
 	const isAdmin = true
