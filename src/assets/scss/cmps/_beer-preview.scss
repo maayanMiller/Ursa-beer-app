@@ -1,12 +1,12 @@
 .beer-preview {
     display: flex;
     flex-direction: column;
-    background-color: #e91e630a;
+    background-color: rgb(34, 34, 34);
     text-align: center;
     box-shadow: 3px 4px 15px #00000026;
     border-radius: 5px;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 45%;
     background-position: bottom right;
     overflow-y: hidden;
 
@@ -25,12 +25,15 @@
         background-color: #000000d1;
         transform: translateY(100%);
         transition: transform 0.3s;
-        > button, a {
+
+        >button,
+        a {
             font-size: 1rem;
             padding: 0;
             background: none;
             border: none;
             color: whitesmoke;
+
             &:hover {
                 text-decoration: underline;
             }

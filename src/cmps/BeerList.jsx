@@ -1,6 +1,7 @@
-import {BeerPreview} from './BeerPreview'
+import { BeerPreview } from './BeerPreview'
 
-export function BeerList({beers, onRemoveBeer, history}) {
+
+export function BeerList({ beers, onRemoveBeer, history }) {
 	// console.log('history:', history)
 
 	return (

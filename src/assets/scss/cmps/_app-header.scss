@@ -1,24 +1,42 @@
 .app-header {
-    background-color: #e91e63;
-    color: whitesmoke;
+    background-color: rgb(34, 34, 34);
 
-    > section {
+
+    >section {
         display: flex;
         align-items: center;
 
-        h1.logo {
-            flex-grow: 1;
-            font-weight: 600;
+        .logo {
+            // border: 1px solid rgb(100, 214, 66);
+
+            // flex-grow: 1;
+            // height: 100px;
+            width: 250px;
         }
 
         .back {
-            flex-grow: 1;
+            // flex-grow: 1;
+            // border: 1px solid rgb(96, 66, 214);
+            // display: flex;
+            // justify-content: end;
+
         }
 
         nav {
-            a:not(:last-of-type) {
-                margin-inline-end: 8px;
+            // flex-grow: 1;
+            // border: 1px solid rgb(199, 214, 66);
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin-inline-end: 12px;
             }
         }
+    }
+
+    .container {
+        // border: 1px solid rgb(214, 66, 66);
+        display: flex;
+        justify-content: space-between;
     }
 }

@@ -7,14 +7,13 @@ import { beerService } from '../services/beerService'
 import { connect } from 'react-redux'
 import { loadBeers, removeBeer, setFilterBy } from '../store/actions/beerActions'
 import { BeerBoard } from '../cmps/BeerBoard'
-import { ABlock } from '../cmps/ABlock'
 
 class _BeerApp extends Component {
 
 	async componentDidMount() {
 		this.props.loadBeers()
-		console.log('this.props:', this.props)
-		console.log('	this.props:', this.props)
+
+
 	}
 	state = {
 		isBoardOpen: false
@@ -38,6 +37,9 @@ class _BeerApp extends Component {
 		// this.loadBeers()
 		this.props.removeBeer(beerId)
 	}
+	onOpenBoard = () => {
+		this.setState({ isBoardOpen: !this.state.isBoardOpen })
+	}
 
 	onChangeFilter = (filterBy) => {
 		this.props.setFilterBy(filterBy)
@@ -48,15 +50,21 @@ class _BeerApp extends Component {
 	render() {
 		const { beers } = this.props
 		if (!beers) return <div>Loading...</div>
-		if (this.state.isBoardOpen) return <BeerBoard beers={beers} />
+		if (this.state.isBoardOpen) return <BeerBoard onOpenBoard={this.onOpenBoard} beers={beers} />
 
 
 		return (
 			<><div className='beer-app'>
 				<BeerFilter onChangeFilter={this.onChangeFilter} />
-				<Link to='/beer/edit'>Add Beer</Link>
-				<h4 onClick={() => this.setState({ isBoardOpen: !this.state.isBoardOpen })}> board</h4>
-				<ABlock beers={beers} />
+				<div className='add'>
+					<Link to='/beer/edit'>
+						<div className='add-button'>
+							<img alt='Add Beer' src={require('../assets/imgs/add.png')}></img>
+							<h3>Add Beer</h3>
+						</div>
+					</Link>
+				</div>
+				{/* <h4 onClick={() => }> board</h4> */}
 				<BeerList
 					history={this.props.history}
 					onRemoveBeer={this.onRemoveBeer}
