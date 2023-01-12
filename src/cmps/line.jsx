@@ -13,7 +13,7 @@ export function Line({ beer }) {
 		const intervalId = setInterval(() => {
 			setBeer({ ...beer })
 			play()
-		}, Math.random() * 1600000);
+		}, Math.random() * 1000000);
 		return () => clearInterval(intervalId);
 	}, [beer]);
 
@@ -38,6 +38,13 @@ export function Line({ beer }) {
 				timing={30}
 				value={`${beer.beerName}`} />
 
+			<FlapDisplay
+				className='cell-container'
+				key={makeId()}
+				beer={newBeer}
+				chars={Presets.ALPHANUM}
+				timing={30}
+				value={`${beer.brewery}`} />
 			<FlapDisplay
 				className='cell-container'
 				key={makeId()}

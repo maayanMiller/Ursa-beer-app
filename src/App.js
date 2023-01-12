@@ -29,7 +29,7 @@ function App() {
 					</Switch>
 				</main>
 				<footer>
-					<section className='container'>beerRights 2022 &copy;</section>
+					<section className='container'>MaayanMiller 2023 &copy;</section>
 				</footer>
 			</div>
 		</Router>

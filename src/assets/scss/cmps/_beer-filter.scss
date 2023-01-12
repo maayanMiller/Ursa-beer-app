@@ -1,18 +1,14 @@
 .beer-filter {
     display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
     gap: 10px;
     margin-block: 30px;
-    // border: 1px solid #eee;
-
-
-
 }
 
 .beer-filter-container {
-    // border: 1px solid rgb(24, 24, 236);
     display: flex;
+    // border: 1px solid #eee;
+    width: 100%;
+    justify-content: space-between;
 
     >section {
         display: flex;
@@ -25,9 +21,8 @@
         font-size: 1.2em;
 
         >input {
-            width: 80%;
+            // width: 80%;
             height: 2em;
         }
-
     }
 }

@@ -22,6 +22,7 @@ export class _BeerBoard extends Component {
 					<div className='line line-header'>
 						<div className='gate'>GATE</div>
 						<div className='cell-container'>NAME</div>
+						<div className='cell-container'>BREWERY</div>
 						<div className='cell-container'>TYPE</div>
 						<div className='gate'>ABV</div>
 						<div className='gate'>IBU</div>

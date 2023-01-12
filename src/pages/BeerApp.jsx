@@ -54,7 +54,7 @@ class _BeerApp extends Component {
 
 
 		return (
-			<><div className='beer-app'>
+			<div className='beer-app '>
 				<BeerFilter onChangeFilter={this.onChangeFilter} />
 				<div className='add'>
 					<Link to='/beer/edit'>
@@ -70,7 +70,7 @@ class _BeerApp extends Component {
 					onRemoveBeer={this.onRemoveBeer}
 					beers={beers} />
 			</div>
-			</>
+
 		)
 	}
 }
