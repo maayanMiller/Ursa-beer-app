@@ -19,30 +19,33 @@
 
 /* Desktop First */
 @mixin for-mobile-layout {
-    @media (max-width: $mobile-breakpoint) {
+    @media (max-width: $break-narrow) {
         @content;
     }
 }
 
-@mixin for-tablet-layout {
-    @media (max-width: $tablet-breakpoint) {
+@mixin for-narrow-layout {
+    @media (min-width: $break-narrow) {
         @content;
     }
 }
 
 @mixin for-normal-layout {
-    @media (max-width: $normal-breakpoint) {
+    @media (min-width: $break-normal) {
         @content;
     }
 }
 
 @mixin for-wide-layout {
-    @media (max-width: $wide-breakpoint) {
+    @media (min-width: $break-wide) {
         @content;
     }
 }
 
-
+@mixin layoutGTC($max) {
+    grid-template-columns:
+        minmax($layoutPadding, 1fr) minmax(auto, $max) minmax($layoutPadding, 1fr);
+}
 
 /* Media  Mixins */
 @mixin aspect-ratio($width, $height) {
@@ -86,6 +89,7 @@
     &::before {
         content: open-quote;
     }
+
     &::after {
         content: close-quote;
     }

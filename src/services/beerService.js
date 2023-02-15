@@ -14,7 +14,7 @@ const STORAGE_KEY = 'beers'
 
 const gDefaultBeers = [
 	{
-		_id: 'r1',
+		_id: 'rfhssdfhdsfgh5rt1',
 		gate: 'A1',
 		brewery: 'Mikkeller',
 		beerName: 'Iskold',
@@ -25,7 +25,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r2',
+		_id: 'rsthwtrjhw6utrjw5j2',
 		gate: 'A2',
 		brewery: 'BeaverTown',
 		beerName: 'Solar Flame',
@@ -36,7 +36,7 @@ const gDefaultBeers = [
 		price: 33,
 	},
 	{
-		_id: 'r3',
+		_id: '45ewtrfdgbgndfhgjedjkhker3',
 		gate: 'A3',
 		brewery: 'BeaverTown',
 		beerName: 'Supermoon',
@@ -47,7 +47,7 @@ const gDefaultBeers = [
 		price: 33,
 	},
 	{
-		_id: 'r4',
+		_id: 'r4yjdtymetywesymtd,mdju,',
 		gate: 'A4',
 		brewery: 'Mikkeller',
 		beerName: 'Beer geek cocoa shake',
@@ -58,7 +58,7 @@ const gDefaultBeers = [
 		price: 37,
 	},
 	{
-		_id: 'r5',
+		_id: 'r5ytkeyjdtykmeumkdj,',
 		gate: 'A5',
 		brewery: 'Mikkeller',
 		beerName: 'Kaerlek',
@@ -69,7 +69,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r6',
+		_id: 'rtyekmuy,eu,eyyj,ydu,6',
 		gate: 'A6',
 		brewery: 'BrewDog',
 		beerName: 'Double punk',
@@ -80,7 +80,7 @@ const gDefaultBeers = [
 		price: 22,
 	},
 	{
-		_id: 'r7',
+		_id: 'rirylrl,eru,7',
 		gate: 'A7',
 		brewery: 'Kasteel',
 		beerName: 'Bacchus',
@@ -91,7 +91,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r8',
+		_id: 'rrulekdtukri8',
 		gate: 'A8',
 		brewery: 'Mikkeller',
 		beerName: 'HOD Syrax',
@@ -102,7 +102,7 @@ const gDefaultBeers = [
 		price: 20,
 	},
 	{
-		_id: 'r9',
+		_id: 'rruyl479;i;lfgydd9',
 		gate: 'A9',
 		brewery: 'Mikkeller',
 		beerName: 'Japanese',
@@ -113,7 +113,7 @@ const gDefaultBeers = [
 		price: 16,
 	},
 	{
-		_id: 'r10',
+		_id: 'r1tfy8lto;klcg0',
 		gate: 'B1',
 		brewery: 'Kasteel',
 		beerName: 'Shoshan',
@@ -124,7 +124,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r11',
+		_id: 'rdgh5dfgh555klcg0',
 		gate: 'B2',
 		brewery: 'Mikkeller',
 		beerName: 'Peter Pale and mary',
@@ -135,7 +135,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r12',
+		_id: 'r1fgj.rl.vff2',
 		gate: 'B3',
 		brewery: 'BrewDog',
 		beerName: 'Basic Shake',
@@ -146,7 +146,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r13',
+		_id: 'r1mn.gjk/.gl/3',
 		gate: 'B4',
 		brewery: 'BrewDog',
 		beerName: 'Triple Agent',
@@ -157,7 +157,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r14',
+		_id: 'r1uiafhg4',
 		gate: 'B5',
 		brewery: 'BrewDog',
 		beerName: 'Pupet Master',
@@ -168,7 +168,7 @@ const gDefaultBeers = [
 		price: 21,
 	},
 	{
-		_id: 'r15',
+		_id: 'rkjldsaghLKDG15',
 		gate: 'B6',
 		brewery: 'BrewDog',
 		beerName: 'Custom Shop',
@@ -179,7 +179,7 @@ const gDefaultBeers = [
 		price: 16,
 	},
 	{
-		_id: 'r16',
+		_id: 'r1FJDFBGHLKJA6',
 		gate: 'B7',
 		brewery: 'BrewDog',
 		beerName: 'Lost Guava',
@@ -190,7 +190,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r17',
+		_id: 'rFKLDFJHGV17',
 		gate: 'B8',
 		brewery: 'BrewDog',
 		beerName: 'Lost lyhee&lime',
@@ -201,7 +201,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r18',
+		_id: 'r1AHGNJSH8',
 		gate: 'B9',
 		brewery: 'BrewDog',
 		beerName: 'Lost Blood orange',
@@ -212,7 +212,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r19',
+		_id: 'rghsfms19',
 		gate: 'C1',
 		brewery: 'BeaverTown',
 		beerName: 'Bloody hell',
@@ -223,7 +223,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r20',
+		_id: 'rjhlfjs20',
 		gate: 'C2',
 		brewery: 'BeaverTown',
 		beerName: 'Gamma ray',
@@ -234,7 +234,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r21',
+		_id: 'r2atjsykmwuk1',
 		gate: 'C3',
 		brewery: 'BeaverTown',
 		beerName: 'Neck oil',
@@ -245,7 +245,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r22',
+		_id: 'r2syhkystuk,lsws2',
 		gate: 'C4',
 		brewery: 'BeaverTown',
 		beerName: 'Lupuloid',
@@ -256,7 +256,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r23',
+		_id: 'r2stykmeyu,leyil,s3',
 		gate: 'C5',
 		brewery: 'Siren',
 		beerName: 'Calypso',
@@ -267,7 +267,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r24',
+		_id: 'r2artjajwykatrh4',
 		gate: 'C6',
 		brewery: 'Siren',
 		beerName: 'Broken Dream',
@@ -278,7 +278,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r25',
+		_id: 'r2aetjhatjqrtyjrya5',
 		gate: 'C7',
 		brewery: 'Siren',
 		beerName: 'Lumina',
@@ -289,7 +289,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r26',
+		_id: 'ratjatjaqrtjartqj26',
 		gate: 'C8',
 		brewery: 'Siren',
 		beerName: 'Yu LU',
@@ -300,8 +300,8 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r27',
-		gate: 'C19',
+		_id: 'r2atrjaryjryjk7',
+		gate: 'C9',
 		brewery: 'Siren',
 		beerName: 'Santo',
 		type: 'DH Lager',
@@ -311,7 +311,7 @@ const gDefaultBeers = [
 		price: 19,
 	},
 	{
-		_id: 'r28',
+		_id: 'r2rtjsywktwykwyk8',
 		gate: 'D1',
 		brewery: 'BrewDog',
 		beerName: 'Hazy Jane Peach',
@@ -322,7 +322,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r29',
+		_id: 'r2ywjksywkwyk9',
 		gate: 'D3',
 		brewery: 'BrewDog',
 		beerName: 'Hop Tiger',
@@ -333,7 +333,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r30',
+		_id: 'r3wykwyktwykwyk0',
 		gate: 'D2',
 		brewery: 'BrewDog',
 		beerName: 'Hazy Jane Peach',
@@ -344,7 +344,7 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r31',
+		_id: 'r3ywktuktukrwja1',
 		gate: 'D4',
 		brewery: 'BeaverTown',
 		beerName: 'BeaverTown',
@@ -355,7 +355,7 @@ const gDefaultBeers = [
 		price: 33,
 	},
 	{
-		_id: 'r32',
+		_id: 'rWU6WYUJWTRHYQWT32',
 		gate: 'D5',
 		brewery: 'BeaverTown',
 		beerName: 'Space Hulk',
@@ -366,7 +366,7 @@ const gDefaultBeers = [
 		price: 33,
 	},
 	{
-		_id: 'r33',
+		_id: '<r3YUREWR>E</r3YUREWR>Q3',
 		gate: 'D6',
 		brewery: 'Mikkeller',
 		beerName: 'Passion Pool',
@@ -377,7 +377,7 @@ const gDefaultBeers = [
 		price: 20,
 	},
 	{
-		_id: 'r34',
+		_id: 'r3RYERYEYHERTHE4',
 		gate: 'D7',
 		brewery: 'Siren',
 		beerName: 'Castillien',
@@ -388,7 +388,7 @@ const gDefaultBeers = [
 		price: 33,
 	},
 	{
-		_id: 'r35',
+		_id: 'r35RETURTURTHE',
 		gate: 'D8',
 		brewery: 'BeaverTown',
 		beerName: 'Tropigamma',
@@ -399,7 +399,7 @@ const gDefaultBeers = [
 		price: 22,
 	},
 	{
-		_id: 'r36',
+		_id: 'r3DFGJRDJDJ6',
 		gate: 'D9',
 		brewery: 'Siren',
 		beerName: 'Futurist',
@@ -410,7 +410,7 @@ const gDefaultBeers = [
 		price: 28,
 	},
 	{
-		_id: 'r37',
+		_id: 'r3GFDFGHJDHJ7',
 		gate: 'E1',
 		brewery: 'BrewDog',
 		beerName: '90 Days Bock',
@@ -421,20 +421,20 @@ const gDefaultBeers = [
 		price: 15,
 	},
 	{
-		_id: 'r38',
+		_id: 'r38GFJRSYJKSYKJ',
 		gate: 'E2',
 		brewery: 'BrewDog',
 		beerName: '5AM Saint',
 		type: 'American Red ale',
 		abv: 5,
-		ibu: 3.35,
+		ibu: 30,
 		untapped: 3.63,
 		price: 14,
 	},
 	{
-		_id: 'r39',
+		_id: 'rSRYKSYJSRYJ39',
 		gate: 'E3',
-		brewery: 'BrewDog VS Mikkeller',
+		brewery: 'BrewDog',
 		beerName: 'Urban Fog',
 		type: 'NEIPA',
 		abv: 6.5,
@@ -443,7 +443,7 @@ const gDefaultBeers = [
 		price: 23,
 	},
 	{
-		_id: 'r40',
+		_id: 'r4SRTJSRTJSRTYJ0',
 		gate: 'E4',
 		brewery: 'BrewDog',
 		beerName: 'Candy Kittens',
@@ -454,7 +454,7 @@ const gDefaultBeers = [
 		price: 23,
 	},
 	{
-		_id: 'r41',
+		_id: 'r4DRTYJSRTJSRTYJRYSJ1',
 		gate: 'E5',
 		brewery: 'BrewDog',
 		beerName: 'Way out West',
@@ -465,7 +465,7 @@ const gDefaultBeers = [
 		price: 23,
 	},
 	{
-		_id: 'r42',
+		_id: 'r4YDRJDTYJDYRJDYTJ2',
 		gate: 'E6',
 		brewery: 'BrewDog',
 		beerName: 'Almost Famous',
@@ -476,7 +476,7 @@ const gDefaultBeers = [
 		price: 23,
 	},
 	{
-		_id: 'r43',
+		_id: 'rSRYJSYRJYTJ43',
 		gate: 'E7',
 		brewery: 'Kasteel',
 		beerName: 'Nitro Rouge',
@@ -487,7 +487,7 @@ const gDefaultBeers = [
 		price: 17,
 	},
 	{
-		_id: 'r44',
+		_id: 'r44SRTJSRTYJRYJ',
 		gate: 'E8',
 		brewery: 'Kasteel',
 		beerName: 'Nitro Quad',
@@ -498,7 +498,7 @@ const gDefaultBeers = [
 		price: 17,
 	},
 	{
-		_id: 'r45',
+		_id: 'rSRTJYRJRYJSRTYJ45',
 		gate: 'E9',
 		brewery: 'Kasteel',
 		beerName: 'Nitro Noir',
@@ -516,12 +516,16 @@ function query(filterBy) {
 	let beersToReturn = gBeers
 	// console.log('gBeers:', gBeers)
 	if (filterBy) {
-		var {type, brewery, beerName} = filterBy
+		var {type, brewery, beerName, minPrice, maxPrice} = filterBy
+		maxPrice = maxPrice || Infinity
+		minPrice = minPrice || 0
 		beersToReturn = gBeers.filter(
 			(beer) =>
 				beer.type.toLowerCase().includes(type.toLowerCase()) &&
 				beer.beerName.toLowerCase().includes(beerName.toLowerCase()) &&
-				beer.brewery.toLowerCase().includes(brewery.toLowerCase())
+				beer.brewery.toLowerCase().includes(brewery.toLowerCase()) &&
+				beer.price < maxPrice &&
+				beer.price > minPrice
 		)
 		// console.log('beersToReturn:', beersToReturn)
 	}

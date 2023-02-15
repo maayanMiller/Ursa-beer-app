@@ -42,6 +42,7 @@ class _BeerApp extends Component {
 	}
 
 	onChangeFilter = (filterBy) => {
+		console.log('filterBy:', filterBy)
 		this.props.setFilterBy(filterBy)
 		this.props.loadBeers()
 

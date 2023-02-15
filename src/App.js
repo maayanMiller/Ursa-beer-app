@@ -17,7 +17,7 @@ const PrivateRoute = (props) => {
 function App() {
 	return (
 		<Router>
-			<div className='main-app'>
+			<div className='main-app main-layout'>
 				<AppHeader />
 				<main className='container'>
 					<Switch>

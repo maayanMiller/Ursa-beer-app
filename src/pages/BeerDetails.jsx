@@ -1,6 +1,6 @@
-import {Component} from 'react'
-import {Link} from 'react-router-dom'
-import {beerService} from '../services/beerService'
+import { Component } from 'react'
+import { Link } from 'react-router-dom'
+import { beerService } from '../services/beerService'
 
 export class BeerDetails extends Component {
 	state = {
@@ -13,7 +13,8 @@ export class BeerDetails extends Component {
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		if (prevProps.match.params.id !== this.props.match.params.id) {
+		if (prevProps.match.params.id !== this.props.match.params.id)
+		{
 			this.loadBeer()
 		}
 	}
@@ -21,7 +22,7 @@ export class BeerDetails extends Component {
 	async loadBeer() {
 		const beerId = this.props.match.params.id
 		const beer = await beerService.getById(beerId)
-		this.setState({beer})
+		this.setState({ beer })
 	}
 
 	onBack = () => {
@@ -31,7 +32,7 @@ export class BeerDetails extends Component {
 
 	render() {
 		// console.log('render')
-		const {beer} = this.state
+		const { beer } = this.state
 		if (!beer) return <div>Loading...</div>
 		return (
 			<div className='beer-details'>
@@ -59,7 +60,7 @@ export class BeerDetails extends Component {
 				<section>
 					<h3>price: {beer.price}</h3>
 				</section>
-				<img src={`https://robohash.org/${beer._id}`} alt='' />
+				<img src={require(`../assets/beersLogos/${beer.brewery}.png`)} alt='' />
 				<button onClick={this.onBack}>Back</button>
 				<Link to='/beer/r3'>Next Beer</Link>
 			</div>

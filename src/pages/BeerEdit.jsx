@@ -41,7 +41,7 @@ export class BeerEdit extends Component {
 			<section className='beer-edit'>
 				<h1>{beer._id ? 'Edit' : 'Add'} Beer</h1>
 				<form onSubmit={this.onSaveBeer}>
-					<label htmlFor='gate'>gate</label>
+					<label htmlFor='gate'>Gate</label>
 					<input
 						ref={this.inputRefFunc}
 						value={beer.gate}
@@ -50,7 +50,7 @@ export class BeerEdit extends Component {
 						name='gate'
 						id='gate'
 					/>{' '}
-					<label htmlFor='beerName'>beerName</label>
+					<label htmlFor='beerName'>Name</label>
 					<input
 						ref={this.inputRefFunc}
 						value={beer.beerName}
@@ -59,15 +59,18 @@ export class BeerEdit extends Component {
 						name='beerName'
 						id='beerName'
 					/>{' '}
+
 					<label htmlFor='brewery'>Brewery</label>
-					<input
-						ref={this.inputRefFunc}
-						value={beer.brewery}
-						onChange={this.handleChange}
-						type='text'
-						name='brewery'
-						id='brewery'
-					/>{' '}
+					<select value={beer.brewery} onChange={this.handleChange} name='brewery' id='brewery'>
+						<option disabled value=''>
+							Choose a brewery
+						</option>
+						<option value='Mikkeller'>Mikkeller</option>
+						<option value='BeaverTown'>BeaverTown</option>
+						<option value='BrewDog'>BrewDog</option>
+						<option value='Kasteel'>Kasteel</option>
+						<option value='Siren'>Siren</option>
+					</select>
 					<label htmlFor='abv'>ABV</label>
 					<input
 						ref={this.inputRefFunc}
@@ -77,7 +80,7 @@ export class BeerEdit extends Component {
 						name='abv'
 						id='abv'
 					/>{' '}
-					<label htmlFor='untapped'>untapped</label>
+					<label htmlFor='untapped'>Untapped</label>
 					<input
 						ref={this.inputRefFunc}
 						value={beer.untapped}
@@ -95,7 +98,7 @@ export class BeerEdit extends Component {
 						name='ibu'
 						id='ibu'
 					/>
-					<label htmlFor='price'>price</label>
+					<label htmlFor='price'>Price</label>
 					<input
 						ref={this.inputRefFunc}
 						value={beer.price}
@@ -105,16 +108,15 @@ export class BeerEdit extends Component {
 						id='price'
 					/>
 					<label htmlFor='type'>Type</label>
-					<select value={beer.type} onChange={this.handleChange} name='type' id='type'>
-						<option disabled value=''>
-							Choose a type
-						</option>
-						<option value='IPA'>IPA</option>
-						<option value='lager'>lager</option>
-						<option value='Amber Ale'>Amber Ale</option>
-						<option value='lambic'>lambic</option>
-						<option value='Vienna lager'>Vienna lager</option>
-					</select>
+					<input
+						ref={this.inputRefFunc}
+						value={beer.type}
+						onChange={this.handleChange}
+						type='text'
+						name='type'
+						id='type'
+					/>{' '}
+
 					<button>Save</button>
 				</form>
 			</section>

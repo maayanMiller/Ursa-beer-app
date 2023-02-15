@@ -4,7 +4,7 @@ import { NavLink, withRouter } from 'react-router-dom'
 function _AppHeader(props) {
 	console.log('_AppHeader -> props', props)
 	return (
-		<header className='app-header'>
+		<header className='app-header full main-layout'>
 			<section className='container'>
 				<div className='logo'>
 					<img alt='' src={require('../assets/imgs/beerLogo.png')}></img>

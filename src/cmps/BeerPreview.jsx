@@ -10,6 +10,7 @@ export function BeerPreview({ beer, onRemoveBeer }) {
 			<Link to={`/beer/${beer._id}`} className='info'>
 				<h2>{beer.beerName}</h2>
 				<h4>{beer.brewery}</h4>
+				<h4>{beer.gate}</h4>
 				{/* <img src={require(`../assets/imgs/beersLogos/${beer.brewery}.png`)} alt="" /> */}
 			</Link>
 			<section className='actions'>

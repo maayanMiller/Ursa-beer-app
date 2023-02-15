@@ -7,8 +7,14 @@ $clr5: #e6e9ec;
 
 $navHeight: 65px;
 
-// Breakpoints
-$mobile-breakpoint: 600px;
-$tablet-breakpoint: 768px;
-$normal-breakpoint: 900px;
-$wide-breakpoint: 1080px;
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 1200px;
+$break-normal: 1360px;
+$break-wide: 1920px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;

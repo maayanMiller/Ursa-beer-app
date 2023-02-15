@@ -4,7 +4,8 @@ export class BeerFilter extends Component {
 	state = {
 		brewery: '',
 		type: '',
-		price: '',
+		minPrice: '',
+		maxPrice: '',
 		beerName: '',
 	}
 
@@ -12,6 +13,7 @@ export class BeerFilter extends Component {
 		const field = target.name
 		const value = target.type === 'number' ? +target.value || '' : target.value
 		this.setState({ [field]: value }, () => {
+			console.log('this.state:', this.state)
 			this.props.onChangeFilter({ ...this.state })
 		})
 	}
@@ -42,13 +44,23 @@ export class BeerFilter extends Component {
 						/>
 					</section>
 					<section>
-						<label htmlFor='price'>price</label>
+						<label htmlFor='minPrice'> min price</label>
 						<input
 							value={price}
 							onChange={this.handleChange}
 							type='number'
-							name='price'
-							id='price'
+							name='minPrice'
+							id='minPrice'
+						/>
+					</section>
+					<section>
+						<label htmlFor='maxPrice'>max price</label>
+						<input
+							value={price}
+							onChange={this.handleChange}
+							type='number'
+							name='maxPrice'
+							id='maxPrice'
 						/>
 					</section>
 					<section>
