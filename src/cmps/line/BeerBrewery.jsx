@@ -7,16 +7,16 @@ import flipSlapSound from '../../assets/sounds/split-flap-sound.wav'
 export function BeerBrewery({ beer }) {
 
 	const [newBeer, setBeer] = useState(beer);
-	const play = () => {
-		new Audio(flipSlapSound).play()
-	}
-	useEffect(() => {
-		const intervalId = setInterval(() => {
-			setBeer({ ...beer })
-			play()
-		}, Math.random() * 7200000);
-		return () => clearInterval(intervalId);
-	}, [beer]);
+	// const play = () => {
+	// 	new Audio(flipSlapSound).play()
+	// }
+	// useEffect(() => {
+	// 	const intervalId = setInterval(() => {
+	// 		setBeer({ ...beer })
+	// 		play()
+	// 	}, Math.random() * 7200000);
+	// 	return () => clearInterval(intervalId);
+	// }, [beer]);
 
 
 	return (
