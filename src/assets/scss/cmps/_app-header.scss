@@ -1,7 +1,6 @@
 .app-header {
     background-color: rgb(34, 34, 34);
 
-
     >section {
         display: flex;
         align-items: center;
@@ -11,17 +10,7 @@
             width: 250px;
         }
 
-        .back {
-            // flex-grow: 1;
-            // border: 1px solid rgb(96, 66, 214);
-            // display: flex;
-            // justify-content: end;
-
-        }
-
         nav {
-            // flex-grow: 1;
-            // border: 1px solid rgb(199, 214, 66);
             display: flex;
             justify-content: center;
 

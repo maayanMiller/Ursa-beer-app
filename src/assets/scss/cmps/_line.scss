@@ -1,5 +1,5 @@
 .line {
-    width: 1884px;
+    width: 1896px;
     display: grid;
     margin-bottom: 3px;
     height: 1em;
@@ -15,7 +15,10 @@
 }
 
 .cell-container [data-kind="digit"] {
-    background-color: rgb(10, 10, 12);
+    background-image: url("../../imgs/10.jpg");
+    background-size: 100.2%;
+    background-repeat: no-repeat;
+    background-position: center;
     border: 1px solid rgb(32, 30, 27);
     color: rgb(150, 159, 168);
 }
