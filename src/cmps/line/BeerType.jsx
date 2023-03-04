@@ -13,7 +13,7 @@ export function BeerType({ beer }) {
 		const intervalId = setInterval(() => {
 			setBeer({ ...beer })
 			play()
-		}, Math.random() * 7200000);
+		}, Math.random() * 15000000);
 		return () => clearInterval(intervalId);
 	}, [beer]);
 
