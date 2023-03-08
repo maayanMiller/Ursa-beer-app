@@ -13,7 +13,7 @@ export function BeerBrewery({ beer }) {
 				beer={beer}
 				padMode={'end'}
 				chars={Presets.ALPHANUM}
-				// length={11}
+				// length={13}
 				value={`${beer.brewery}`}
 			// value={``}
 			/>

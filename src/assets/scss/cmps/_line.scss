@@ -1,9 +1,10 @@
 .line {
-    width: 1896px;
+    width: 2395px;
     display: grid;
     margin-bottom: 3px;
+
     height: 1em;
-    grid-template-columns: repeat(7, 90px 800px 530px 150px 110px 150px 70px);
+    grid-template-columns: repeat(7, 90px 950px 860px 150px 110px 150px 70px);
 }
 
 .line-header {
@@ -15,8 +16,9 @@
 }
 
 .cell-container [data-kind="digit"] {
-    background-image: url("../../imgs/10.jpg");
-    background-size: 100.2%;
+    background-image: url("../../imgs/15.png");
+    // background-color: rgba(0, 255, 255, 0);
+    background-size: 230.2%;
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid rgb(32, 30, 27);
@@ -24,15 +26,19 @@
 }
 
 .n-and-b {
-    width: 800px;
+    width: 860px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 
 .beer-name {
-    width: 500px;
+    width: 1200px;
 }
 
 .beer-brewery {
     width: 300px;
+}
+
+.beer-type {
+    width: 530px;
 }

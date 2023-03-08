@@ -46,7 +46,7 @@ export class BeerDetails extends Component {
 					<h3>Type: {beer.type}</h3>
 				</section>
 				<section>
-					<h3>Brewery: {beer.brewery}</h3>
+					<h3>supplier: {beer.supplier}</h3>
 				</section>
 				<section>
 					<h3>ABV: {beer.abv}</h3>
@@ -56,6 +56,9 @@ export class BeerDetails extends Component {
 				</section>
 				<section>
 					<h3>untapped: {beer.untapped}</h3>
+				</section>
+				<section>
+					<h3>cost: {beer.cost}</h3>
 				</section>
 				<section>
 					<h3>price: {beer.price}</h3>

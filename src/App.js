@@ -28,8 +28,8 @@ function App() {
 						<Route path='/' component={BeerApp} />
 					</Switch>
 				</main>
-				<footer>
-					<section className='app-footer'>MaayanMiller 2023 &copy;</section>
+				<footer className='app-footer full main-layout'>
+					<section>MaayanMiller 2023 &copy;</section>
 				</footer>
 			</div>
 		</Router>

@@ -6,6 +6,7 @@ export function BeerList({ beers, onRemoveBeer, history }) {
 
 	return (
 		<div className='beer-list simple-cards-grid'>
+
 			{beers.map((beer) => (
 				<BeerPreview key={beer._id} beer={beer} onRemoveBeer={onRemoveBeer} />
 			))}

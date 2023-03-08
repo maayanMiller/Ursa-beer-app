@@ -6,16 +6,16 @@ import flipSlapSound from '../../assets/sounds/split-flap-sound.wav'
 export function BeerType({ beer }) {
 
 	const [newBeer, setBeer] = useState(beer);
-	const play = () => {
-		new Audio(flipSlapSound).play()
-	}
-	useEffect(() => {
-		const intervalId = setInterval(() => {
-			setBeer({ ...beer })
-			play()
-		}, Math.random() * 15000000);
-		return () => clearInterval(intervalId);
-	}, [beer]);
+	// const play = () => {
+	// 	new Audio(flipSlapSound).play()
+	// }
+	// useEffect(() => {
+	// 	const intervalId = setInterval(() => {
+	// 		setBeer({ ...beer })
+	// 		play()
+	// 	}, Math.random() * 15000000);
+	// 	return () => clearInterval(intervalId);
+	// }, [beer]);
 
 	return (
 		<section className='beer-type'>
@@ -26,7 +26,7 @@ export function BeerType({ beer }) {
 				chars={Presets.ALPHANUM}
 				padMode={'end'}
 				// value={``}
-				// length={24}
+				// length={26}
 				value={`${beer.type}`}
 			/>
 		</section>

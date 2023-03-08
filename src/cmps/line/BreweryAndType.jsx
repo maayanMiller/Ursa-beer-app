@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { BeerBrewery } from "./BeerBrewery";
 import { BeerName } from "./BeerName";
 import flipSlapSound from '../../assets/sounds/split-flap-sound.wav'
+import { BeerType } from "./BeerType";
 
 
-export function NameAndBrewery({ beer }) {
+export function BreweryAndType({ beer }) {
 	const [newBeer, setBeer] = useState(beer);
 	const play = () => {
 		new Audio(flipSlapSound).play()
@@ -21,8 +22,8 @@ export function NameAndBrewery({ beer }) {
 
 	return (
 		<section className='n-and-b'>
-			<BeerName beer={beer} />
 			<BeerBrewery beer={beer} />
+			<BeerType beer={beer} />
 		</section>
 
 	)

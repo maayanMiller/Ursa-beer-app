@@ -29,15 +29,19 @@ body {
 
 
     main {
+
+        min-height: 80vh;
+
         // flex-grow: 1;
     }
 
     >footer {
-        background-color: rgb(147, 69, 69);
-        color: white;
-        position: sticky;
-        bottom: 0;
-        height: fit-content;
+        background-color: rgb(34, 34, 34);
+
+        color: azure;
+        // position: sticky;
+        // bottom: 0;
+        // height: fit-content;
         // width: 100vw;
     }
 }
@@ -112,9 +116,9 @@ button {
 input {
     font-family: inherit;
     text-align: inherit;
-    font-weight: 600;
-    font-size: 1rem;
-    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 5px;
     background-color: rgb(65, 63, 59);
     color: azure;
     border-color: black !important;
@@ -125,6 +129,17 @@ input:focus {
     background-color: rgb(90, 87, 82);
     border-color: black !important;
 
+}
+
+select {
+    font-family: inherit;
+    text-align: inherit;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 5px;
+    background-color: rgb(65, 63, 59);
+    color: azure;
+    border-color: black !important;
 }
 
 // MAC like scrollbar
